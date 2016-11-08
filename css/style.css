@@ -1,0 +1,215 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+  
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+.headline, .tagline {
+  color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.banner {
+  background: linear-gradient(0deg, #fff, transparent),
+              #3acec2 url('../img/burlington.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 60px;    
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.headline {
+  margin-bottom: 0;
+}
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+body {
+	padding-top: 87.4px;
+}
+/*Headline*/
+
+
+.main-header {
+  background: #fff;
+  border: solid 2px #3acec2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px #3acec2;
+  margin-bottom: 20px; 
+  position: fixed;
+  width: 100%;
+  top: 0;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+  }
+  
+  .main-footer {
+	border: solid 2px #3acec2;
+	border-radius: 5px;
+	box-shadow: 0px 0px 3px #3acec2;
+  }
+
+
+/*Main Content*/
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+ .col {
+    padding-right: 10px;
+  }
+
+  .secondary {
+    float: left;  
+    width: 60%;    
+  }
+
+  .primary {
+    float: left;  
+    width: 40%;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+@media (min-width: 950px) {
+
+/*Main Content*/
+
+.secondary {
+    float: left;  
+    width: 30%;    
+  }
+
+  .primary {
+    float: left;  
+    width: 30%;
+  }
+
+  .tertiary {
+    float: left;
+    width: 40%
+  }
+  
+  .wrapper {
+	  max-width: 1150px;
+  }
+  
+ 
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
